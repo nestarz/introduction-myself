@@ -1,0 +1,25 @@
+{
+  "scripts": {
+    "prepare": "pika-web --clean",
+    "start": "serve ./"
+  },
+  "devDependencies": {
+    "@pika/web": "^0.4.2",
+    "serve": "^10.1.2"
+  },
+  "dependencies": {
+    "@swayable/vue-snarkdown": "^1.0.2",
+    "http-vue-loader": "^1.4.0",
+    "remarkable": "^2.0.0",
+    "typeit": "^6.0.3",
+    "vue": "^2.6.10"
+  },
+  "@pika/web": {
+    "webDependencies": [
+      "vue/dist/vue.esm.browser.js",
+      "http-vue-loader/src/httpVueLoader.js",
+      "remarkable/dist/esm/index.browser.js",
+      "typeit/dist/typeit.min.js"
+    ]
+  }
+}
