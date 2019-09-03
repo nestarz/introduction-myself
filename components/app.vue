@@ -22,7 +22,7 @@
         <!-- <li>Emotions, consciousness, sleep, digital connextions with materiality   ...</li> -->
         <li @click="focus = 'vjing'">VJing (live-visuals)</li>
         <li @click="focus = 'nocomputer'">Without computer...</li>
-        <li @click="focus = 'foods'">Food, outfits, emotions, consciousness, digital/material, ...</li>
+        <li @click="focus = 'foods'">Food, outfits, emotions, self, tools, digital/material, ...</li>
       </div>
       <!-- <span>and now I'm willing to put some</span>
       <span class="bold">volume, sounds, stories and life</span>
@@ -51,6 +51,27 @@ module.exports = {
           {
             src: "/assets/images/me.gif",
             class: "bw scale"
+          },
+          {
+            src: "/assets/images/bordeaux.png",
+            class: "bw w10",
+            style: "position: absolute; bottom: 0;"
+          }
+        ],
+        nocomputer: [
+          {
+            src: "/assets/images/fruits.jpg",
+            class: "bw w10"
+          },
+          {
+            src: "/assets/images/tickets.jpeg",
+            class: "bw w10"
+          }
+        ],
+        foods: [
+          {
+            src: "/assets/images/bourdieu.jpg",
+            class: "bw w10"
           }
         ],
         cognitive: [
@@ -65,7 +86,7 @@ module.exports = {
           {
             src: "/assets/images/opto.jpg",
             class: "w10 bw"
-          },
+          }
         ],
         ml: [
           {
@@ -96,8 +117,8 @@ module.exports = {
         ceramics: [
           {
             src: "/assets/images/olivier.jpg",
-            class: "bw",
-          },
+            class: "bw"
+          }
         ],
         vjing: [
           {
@@ -174,7 +195,7 @@ img {
 
 .scale {
   filter: grayscale(1);
-  }
+}
 
 .bold {
   font-weight: bold;
@@ -192,6 +213,7 @@ li {
   margin: 0;
   padding: 0;
   list-style-type: arabic-indic;
+  cursor: pointer;
 }
 
 .camera {
